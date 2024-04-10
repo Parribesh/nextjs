@@ -6,8 +6,8 @@ export default async function Page() {
   console.log('customer:', customer);
   return (
     <>
-      {customer.map((customer) => (
-        <div>
+      {customer.map((customer, key) => (
+        <div key={key}>
           <div>id: {customer.id}</div>
           <div>name: {customer.name}</div>
         </div>
